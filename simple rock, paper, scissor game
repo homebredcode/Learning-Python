@@ -18,5 +18,5 @@ while True:
         pass
 
 # problems:
-# as long as a = b then it will be a draw, no matter what the input is
-# it will print "player 2 wins" if the input is anything other than defined here and a != b(i.e if input is misspelled or nonsensical)
+# as long as a = b then it will be a draw, no matter what the input is.
+# it will print "player 2 wins" if the input is anything other than defined here and a != b(i.e if input is misspelled or nonsensical).
