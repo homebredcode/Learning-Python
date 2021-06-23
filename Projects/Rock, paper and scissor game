@@ -1,0 +1,22 @@
+  while True:
+    a = input('\nplayer 1 please choose rock, paper, or scissor:\n> ')
+    b = input('Player 2 please choose rock, paper or scissor:\n> ')
+    if a.lower() == b.lower():
+        print('Its a tie!')
+    elif a.lower() == 'rock' and b.lower() == 'scissor':
+        print('player 1 wins')
+    elif a.lower() == 'paper' and b.lower() == 'rock':
+        print('player 1 wins')
+    elif a.lower() == 'scissor' and b.lower() == 'paper':
+        print('player 1 wins')
+    else:
+        print('player 2 wins')
+    c = input('play again? yes/no\n> ')
+    if c.lower() == 'no':
+        break
+    else:
+        pass
+
+# problems:
+# as long as a = b then it will be a draw, no matter what the input is.
+# it will print "player 2 wins" if the input is anything other than defined here and a != b(i.e if input is misspelled or nonsensical).
