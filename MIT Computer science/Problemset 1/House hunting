@@ -1,0 +1,28 @@
+portion_down_payment = 0.25
+r = 0.04
+
+annual_salary = float(input('Please enter your annual salary:\n > '))
+portion_saved = float(input('Please enter how mutch in percent will you save? enter from 0-.99:\n > '))
+total_cost = float(input('Please enter the total cost of your dream home:\n> '))
+
+monthly_salary = annual_salary/12
+monthly_amount = monthly_salary * portion_saved
+current_savings = 0
+savings_needed = total_cost * portion_down_payment
+months = 0
+i = 0
+a = 0
+while a < savings_needed:
+    current_savings += monthly_amount
+    i = (current_savings*r)/12
+    a = current_savings + i
+    current_savings = a
+    months += 1
+
+print(months)
+
+
+
+
+
+
